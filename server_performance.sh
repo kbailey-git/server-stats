@@ -8,9 +8,7 @@ echo
 echo "Top 5 Processes by Mem"
 echo
 ps aux --sort -%mem | awk '{print $1,$2,$3,$11}' | head -6
-
 echo
-
 echo "Top 5 Processes by CPU"
 echo
 ps aux --sort -%cpu | awk '{print $1,$2,$4,$11}' | head -6
